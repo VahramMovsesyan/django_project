@@ -51,7 +51,7 @@ def monthly_challenges(request, month):
         challeng_text = months_info[month]
         return render(request,"challenges/challenge.html", {
             "text": challeng_text,
-            "month_name": month.capitalize()
+            "month_name": month
         })  # we can use this insted of two under lines 
         # response_data = render_to_string("challenges/challenge.html")
         # return HttpResponse(response_data)
