@@ -49,7 +49,11 @@ def monthly_challenges_by_numbers(request, month_as_number):
 def monthly_challenges(request, month):
     try:
         challeng_text = months_info[month]
-        return render(request,"challenges/challenge.html")  # we can use this insted of two under lines 
+        return render(request,"challenges/challenge.html", {
+            "text": challeng_text,
+            "title": f"{month.capitalize()} Challange",
+            "about": f"This {month.capitalize()}'s Challenge"
+        })  # we can use this insted of two under lines 
         # response_data = render_to_string("challenges/challenge.html")
         # return HttpResponse(response_data)
     except:
