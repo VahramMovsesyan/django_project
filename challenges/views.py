@@ -15,7 +15,7 @@ months_info = {
     "september": "Learn Django for at least 20 minutes for every day!",
     "october": "Eat no meat for the entire month!",
     "november": "Walk for at least 20 minutes every day!",
-    "december": "Learn Django for at least 20 minutes for every day!"
+    "december": None
 
 }
 
